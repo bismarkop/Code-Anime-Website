@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <title>Gallery</title>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        li {
+            height: 20vh;
+            width: 20vh;
+            flex-grow: 1;
+
+        }
+
+        img {
+            max-height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+            vertical-align: bottom;
+        }
+
+        #footer {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* li:last-child {
+            flex-grow: 10;
+        } */
+
+        @media (max-aspect-ratio: 1/1) {
+            li {
+                height: 30vh;
+            }
+        }
+
+
+
+        @media (max-height: 480px) {
+            li {
+                height: 80vh;
+            }
+        }
+
+
+
+        @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+            ul {
+                flex-direction: row;
+            }
+
+            li {
+                height: auto;
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                max-height: 75vh;
+                min-width: 0;
+            }
+        }
+
+        .dropbtn {
+            background-color: inherit;
+            color: white;
+            font-size: inherit;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 30px;
+            box-shadow: 0px 8px 16px px rgba(0, 0, 0, 0.2);
+            padding: 6px 8px;
+            margin-top: 35px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: underline;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+
+        .navbar a:hover {
+            /* background-color: black; */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar d-flex">
+        <div class="p-1"><a href="./sba_index.html">Home</a></div>
+        <div class="p-1"><a href="./about.html">About Us</a></div>
+        <div class="dropdown">
+            <div class="dropdown-content">
+                <a href="#dbz">DBZ</a>
+                <a href="#nar">Naruto</a>
+                <a href="#aot">AOT</a>
+                <a href="#jjk">JJK</a>
+                <a href="#fma">FMA</a>
+            </div>
+            <div class="p-1"><a href="./gallery.html"><button class="dropbtn">Gallery</button></a></div>
+        </div>
+        <div class="p-1"><a href="./newsletter.html">Newsletter</a></div>
+        <div class="p-1 ms-auto"><a href="./login.html">Log In</a></div>
+    </div>
+
+    <ul id="dbz">
+        <li>
+            <img src="../images/DBZ/dbz_characters.jpg" alt="dragon ball z characters">
+        </li>
+        <li>
+            <img src="../images/DBZ/gohan.png" alt="super saiyan gohan">
+        </li>
+        <li>
+            <img src="../images/DBZ/goku_frieza.png" alt="goku staring at frieza after turning super saiyan">
+        </li>
+        <li>
+            <img src="../images/DBZ/Trunks.jpeg" alt="trunks">
+        </li>
+        <li>
+            <img src="../images/DBZ/gotenks_buu.jpg" alt="gotenks vs buu">
+        </li>
+        <li>
+            <img src="../images/DBZ/cell_androids.png" alt="cell and android 17 & 18">
+        </li>
+        <li></li>
+    </ul>
+
+    <ul id="nar">
+        <li>
+            <img src="../images/Naruto/kages.png" alt="five kages">
+        </li>
+        <li>
+            <img src="../images/Naruto/sasuke_naruto.png" alt="young sasuke vs young naruto">
+        </li>
+        <li>
+            <img src="../images/Naruto/sasuke_naruto2.png" alt="older sasuke vs naruto">
+        </li>
+        <li>
+            <img src="../images/Naruto/sannin.png" alt="sasha with a bow and arrow">
+        </li>
+        <li>
+            <img src="../images/Naruto/sasuke_itachi.png" alt="sasuke and itachi">
+        </li>
+        <li>
+            <img src="../images/Naruto/Naruto_sage.jpeg" alt="naruto in sage mode">
+        </li>
+        <li></li>
+    </ul>
+
+    <ul id="aot">
+        <li>
+            <img src="../images/AOT/hange_colossals.png" alt="hange attacking colossal titans">
+        </li>
+        <li>
+            <img src="../images/AOT/attack-on-titan-armored-titan-attack-titan-eren-reiner.jpg"
+                alt="attack titan vs armored titan">
+        </li>
+        <li>
+            <img src="../images/AOT/braun_family.png" alt="reiner and his family">
+        </li>
+        <li>
+            <img src="../images/AOT/sasha.png" alt="sasha with a bow and arrow">
+        </li>
+        <li>
+            <img src="../images/AOT/levi_titans.jpg" alt="captain levi surrounded by titans">
+        </li>
+        <li>
+            <img src="../images/AOT/mikasa.png" alt="young mikasa">
+        </li>
+        <li></li>
+    </ul>
+
+    <ul id="jjk">
+        <li>
+            <img src="../images/JJK/jjk_chars.jpg" alt="Jujutsu-Kaisen characters">
+        </li>
+        <li>
+            <img src="../images/JJK/gojo-unlocked.png" alt="gojo about to unleash his power">
+        </li>
+        <li>
+            <img src="../images/JJK/gojo-itadorisukuna.png" alt="gojo vs sukuna">
+        </li>
+        <li>
+            <img src="../images/JJK/itadori.jpeg" alt="itadori throwin his power punch">
+        </li>
+        <li>
+            <img src="../images/JJK/jjk_chars2.png" alt="Jujutsu-Kaisen characters">
+        </li>
+        <li>
+            <img src="../images/JJK/toji.png" alt="toji">
+        </li>
+        <li></li>
+    </ul>
+
+    <ul id="fma">
+        <li>
+            <img src="../images/FMA/fma_chars.png" alt="fullmetal alchemist characters">
+        </li>
+        <li>
+            <img src="../images/FMA/elric_bros.png" alt="elric brothers">
+        </li>
+        <li>
+            <img src="../images/FMA/scar.png" alt="scar from fullmetal alchemist">
+        </li>
+        <li>
+            <img src="../images/FMA/nina_transformation.jpeg" alt="nina transformed into dog, fullmetal alchemist">
+        </li>
+        <li>
+            <img src="../images/FMA/edward.png" alt="edward elric">
+        </li>
+        <li>
+            <img src="../images/FMA/alphonse.png" alt="metal alphonse elric">
+        </li>
+        <li></li>
+    </ul>
+
+    <div class="mx-auto p-2" style="width: 100px;">
+        <a href="./gallery.html">Back to top</a>
+    </div>
+
+    <div class="mx-auto p-2" style="width: 300px;">
+        <footer>
+            <p id="footer">© 2024 Code Anime. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

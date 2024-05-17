@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/sba_index.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <title>SBA Website</title>
+    <style>
+        #footer {
+            padding: 0;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar d-flex">
+        <div class="p-1"><a href="./sba_index.html">Home</a></div>
+        <div class="p-1"><a href="./about.html">About Us</a></div>
+        <div class="dropdown">
+            <div class="dropdown-content">
+                <a href="https://en.wikipedia.org/wiki/Dragon_Ball_Z">DBZ</a>
+                <a href="https://en.wikipedia.org/wiki/Naruto">Naruto</a>
+                <a href="https://en.wikipedia.org/wiki/Attack_on_Titan">AOT</a>
+                <a href="https://en.wikipedia.org/wiki/Jujutsu_Kaisen">JJK</a>
+                <a href="https://en.wikipedia.org/wiki/Fullmetal_Alchemist">FMA</a>
+            </div>
+            <div class="p-1"><a href="./gallery.html"><button class="dropbtn">Gallery</button></a></div>
+        </div>
+        <div class="p-1"><a href="./newsletter.html">Newsletter</a></div>
+        <div class="p-1 ms-auto"><a href="./login.html">Log In</a></div>
+    </div>
+
+
+    <div class="container">
+        <div class="header">
+            <h1>Code Anime</h1>
+            <p id="expand">Check Out Our Top 5 Anime Shows of All Time!<br>(In no order)</p>
+        </div>
+    </div>
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+        <div class="container2">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="images"
+                        src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/03/gohan.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"
+                        class="d-block w-100" alt="gohan's stages">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="imageTexts">
+                            <h5>Dragon Ball Z</h5>
+                            <p>This is a timeless classic and if it's not on your list,<br>shame on you!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="images"
+                        src="https://blacknerdproblems.com/wp-content/uploads/2014/09/Rock-Cover-art.png"
+                        class="d-block w-100" alt="rock lee, naruto">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="imageTexts">
+                            <h5>Naruto</h5>
+                            <p>Yes, including Shippuden as well. <br>..and Rock Lee? If you know, you know.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="images"
+                        src="https://www.dexerto.com/cdn-cgi/image/width=1200,quality=60,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/02/02/36626-e1675353293843.jpg"
+                        class="d-block w-100" alt="Attack on Titan">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="imageTexts">
+                            <h5>Attack on Titan</h5>
+                            <p>A lot of people can learn from this show, especially governments.. <br> ..but I
+                                digress...GREAT show!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="images"
+                        src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/08/Jujutsu-Kaisen.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"
+                        class="d-block w-100" alt="Gojo, Jujutsu Kaisen">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="imageTexts">
+                            <h5>Jujutsu Kaisen</h5>
+                            <p>This show has some of, if not the best fight scenes <br> that I've ever seen in animes!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="images"
+                        src="https://resizing.flixster.com/gM4O0i5a9ntDqOUvROemnVl2Pas=/1100x618/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8042516_i_h10_aa.jpg"
+                        class="d-block w-100" alt="fullmetal alchemist">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="imageTexts">
+                            <h5>Fullmetal Alchemist</h5>
+                            <p>Short but oh so sweet! <br>Who do I need to reach out to for more?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div class="mx-auto p-2" style="width: 500px;">
+        <h2>Reasons we Chose These Shows</h2>
+    </div>
+    <!-- How can I used this? -->
+    <div class="d-flex flex-wrap">
+        <div class="p-2 col 4 border border-primary">
+            <div class="card-body">
+                <div class="img-container">
+                    <img src="../images/DBZ/goku.jpg" alt="goku">
+                </div>
+                <h1>Dragon Ball Z</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores praesentium illum deserunt facere
+                    labore
+                    officiis nesciunt aspernatur minima iure provident dolorum veniam omnis, quos facilis illo tempore
+                    fugit
+                    perferendis? Iste!</p>
+            </div>
+        </div>
+        <div class="p-2 col 4 border border-primary">
+            <div class="card-body">
+                <div class="img-container">
+                    <img src="../images/Naruto/Naruto.jpeg" alt="naruto">
+                </div>
+                <h1>Naruto</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores praesentium illum deserunt facere
+                    labore
+                    officiis nesciunt aspernatur minima iure provident dolorum veniam omnis, quos facilis illo tempore
+                    fugit
+                    perferendis? Iste!</p>
+            </div>
+        </div>
+        <div class="p-2 col 4 border border-primary">
+            <div class="card-body">
+                <div class="img-container">
+                    <img src="../images/AOT/eren.jpeg" alt="eren">
+                </div>
+                <h1>Attack on Titan</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores praesentium illum deserunt facere
+                    labore
+                    officiis nesciunt aspernatur minima iure provident dolorum veniam omnis, quos facilis illo tempore
+                    fugit
+                    perferendis? Iste!</p>
+            </div>
+        </div>
+        <div class="p-2 col 4 border border-primary">
+            <div class="card-body">
+                <div class="img-container">
+                    <img src="../images/DBZ/goku.jpg" alt="">
+                </div>
+                <h1>Dragon Ball Z</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores praesentium illum deserunt facere
+                    labore
+                    officiis nesciunt aspernatur minima iure provident dolorum veniam omnis, quos facilis illo tempore
+                    fugit
+                    perferendis? Iste!</p>
+            </div>
+        </div>
+        <div class="p-2 col 4 border border-primary">
+            <div class="card-body">
+                <div class="img-container">
+                    <img src="../images/DBZ/goku.jpg" alt="">
+                </div>
+                <h1>Dragon Ball Z</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores praesentium illum deserunt facere
+                    labore
+                    officiis nesciunt aspernatur minima iure provident dolorum veniam omnis, quos facilis illo tempore
+                    fugit
+                    perferendis? Iste!</p>
+            </div>
+        </div>
+        <div class="p-2 col 4 border border-primary">Flex Item 2</div>
+        <div class="p-2 col 4 border border-primary">Flex Item 3</div>
+        <div class="p-2 col 4 border border-primary">Flex Item 4</div>
+        <div class="p-2 col 4 border border-primary">Flex Item 5</div>
+    </div>
+
+
+    <!-- Add a table hear listening top 10 animes -->
+
+    <!-- <div class="container3">
+        <div class="card-body">
+            <div class="img-container">
+                <img src="../images/image-example.jpg" alt="">
+            </div>
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores praesentium illum deserunt facere labore
+                officiis nesciunt aspernatur minima iure provident dolorum veniam omnis, quos facilis illo tempore fugit
+                perferendis? Iste!</p>
+        </div>
+
+        <div class="card-body">
+            <div class="img-container">
+                <img src="../images/image-example.jpg" alt="">
+            </div>
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores praesentium illum deserunt facere labore
+                officiis nesciunt aspernatur minima iure provident dolorum veniam omnis, quos facilis illo tempore fugit
+                perferendis? Iste!</p>
+        </div>
+        
+        <div class="card-body">
+            <div class="img-container">
+                <img src="../images/image-example.jpg" alt="">
+            </div>
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores praesentium illum deserunt facere labore
+                officiis nesciunt aspernatur minima iure provident dolorum veniam omnis, quos facilis illo tempore fugit
+                perferendis? Iste!</p>
+        </div>
+        
+        <div class="card-body">
+            <div class="img-container">
+                <img src="../images/image-example.jpg" alt="">
+            </div>
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores praesentium illum deserunt facere labore
+                officiis nesciunt aspernatur minima iure provident dolorum veniam omnis, quos facilis illo tempore fugit
+                perferendis? Iste!</p>
+        </div>
+        
+        <div class="card-body">
+            <div class="img-container">
+                <img src="../images/image-example.jpg" alt="">
+            </div>
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores praesentium illum deserunt facere labore
+                officiis nesciunt aspernatur minima iure provident dolorum veniam omnis, quos facilis illo tempore fugit
+                perferendis? Iste!</p>
+        </div> -->
+
+    </div>
+
+
+    <footer>
+        <p id="footer" style="text-align: center;">© 2024 Code Anime. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

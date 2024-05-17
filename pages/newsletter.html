@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/newsletter.css">
+  <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+  <title>Newsletter</title>
+  <style>
+    #footer {
+      padding: 0;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar d-flex">
+    <div class="p-1"><a href="./sba_index.html">Home</a></div>
+    <div class="p-1"><a href="./about.html">About Us</a></div>
+    <div class="dropdown">
+        <div class="dropdown-content">
+            <a href="./gallery.html/#dbz">DBZ</a>
+            <a href="./gallery.html/#nar">Naruto</a>
+            <a href="./gallery.html/#aot">AOT</a>
+            <a href="./gallery.html/#jjk">JJK</a>
+            <a href="./gallery.html/#fma">FMA</a>
+        </div>
+        <div class="p-1"><a href="./gallery.html"><button class="dropbtn">Gallery</button></a></div>
+    </div>
+    <div class="p-1"><a href="./newsletter.html">Newsletter</a></div>
+    <div class="p-1 ms-auto"><a href="./login.html">Log In</a></div>
+</div>
+
+  <form id="form" action="#">
+    <div class="container">
+      <h2 style="text-align: center;">Subscribe to our Newsletter</h2>
+      <p>We love to share our personal take on different animes. We've created a <u>monthly</u> newsletter for the
+        casuals which discusses episodes, movies, arcs, and seasons of various shows. If you're really about this anime
+        life, you can choose the option for our weekly newsletters! For our true supporters, after being subscribed to a
+        newsletter for more than three months, you get added to our email list to win anime-related merch and if you're
+        lucky, we'll connect your to our Reddit! If you knew better, you'd come running like... </p>
+
+      <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe
+          src="https://giphy.com/embed/3ohzdZoopZ5e6UMpdS" width="100%" height="100%" style="position:absolute"
+          frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+
+
+      <div class="container" style="background-color:white">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="text" placeholder="Email address" name="mail" required>
+        <label>
+          <input type="checkbox" name="subscribe"> Weekly Newsletter
+        </label>
+        <label>
+          <input type="checkbox" name="subscribe"> Monthly Newsletter
+        </label>
+      </div>
+
+      <div class="container">
+        <input type="submit" value="Subscribe">
+      </div>
+  </form>
+  <footer>
+    <p id="footer" style="text-align: center;">© 2024 Code Anime. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
