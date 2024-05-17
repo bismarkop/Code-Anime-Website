@@ -4,125 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/gallery.css">
     <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <title>Gallery</title>
     <style>
         body {
             background-color: burlywood;
-        }
-        ul {
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-        }
-
-        li {
-            height: 20vh;
-            width: 20vh;
-            flex-grow: 1;
-
-        }
-
-        img {
-            max-height: 100%;
-            min-width: 100%;
-            object-fit: cover;
-            vertical-align: bottom;
-        }
-
-        #footer {
-            padding: 0;
-            margin: 0;
-        }
-
-        /* li:last-child {
-            flex-grow: 10;
-        } */
-
-        @media (max-aspect-ratio: 1/1) {
-            li {
-                height: 30vh;
-            }
-        }
-
-
-
-        @media (max-height: 480px) {
-            li {
-                height: 80vh;
-            }
-        }
-
-
-
-        @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
-            ul {
-                flex-direction: row;
-            }
-
-            li {
-                height: auto;
-                width: 100%;
-            }
-
-            img {
-                width: 100%;
-                max-height: 75vh;
-                min-width: 0;
-            }
-        }
-
-        .dropbtn {
-            background-color: inherit;
-            color: white;
-            font-size: inherit;
-            border: none;
-            cursor: pointer;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #333;
-            min-width: 30px;
-            box-shadow: 0px 8px 16px px rgba(0, 0, 0, 0.2);
-            padding: 6px 8px;
-            margin-top: 35px;
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: white;
-            padding: 12px 16px;
-            text-decoration: underline;
-            display: block;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .navbar {
-            background-color: #333;
-        }
-
-        .navbar a {
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            text-align: center;
-        }
-
-
-        .navbar a:hover {
-            /* background-color: black; */
-            color: white;
         }
     </style>
 </head>
