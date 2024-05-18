@@ -9,7 +9,15 @@
 #box {
     margin-top: auto;
     margin-bottom: auto;
+    background-color: rgb(168, 238, 243);
+    transition-property: background-color;
+    transition-duration: 2s;
 }
+
+#box:hover {
+    background-color: burlywood;
+}
+
 
 #divider2 {
     /* border-right: 1px solid; */
@@ -21,6 +29,12 @@
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: burlywood;
+    transition-duration: 3s;
+}
+
+#aboutUs:hover {
+    transform: rotate(360deg);
 }
 
 .row {
