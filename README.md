@@ -1,4 +1,4 @@
-# Code Anime
+# Code Anime - SBA 307
 
 Code Anime is an anime fan page that can open up a dialogue for popular anime shows. Although the creators give their personal opionions, it's purpose is to spark a conversation about great shows thay many people hold dear to their hearts.
 
