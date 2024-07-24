@@ -9,8 +9,7 @@ Code Anime is an anime fan page that can open up a dialogue for popular anime sh
 * Gallery of pictures
 * Newsletter sign up page
 
-## Live Deployment
-https://bismarkop.github.io/SBA1/pages/sba_index.html
+
 
 ## Coding
 * HTML
